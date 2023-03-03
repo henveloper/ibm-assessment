@@ -5,7 +5,9 @@ select
 from ibm.owner o
 inner join ibm.article a on o.owner_id = a.owner_id 
 inner join ibm.category_article_mapping m on a.article_id = m.article_id
-group by o.owner_id, o.owner_name 
+group by o.owner_id, o.owner_name
+order by different_category_count desc;
+
 
 -- setup
 
