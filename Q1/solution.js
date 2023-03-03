@@ -32,6 +32,8 @@ function shirtStringToArray(str) {
             sol[1001 - shirt.length]++;
         }
     }
+
+    return sol;
 }
 
 /**
